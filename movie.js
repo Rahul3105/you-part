@@ -43,6 +43,11 @@ function appendData(data) {
                 </div>
 
             `;
+    if (Number(data.imdbRating) > 8.5) {
+      let recommended = document.createElement("div");
+      recommended.innerHTML = "Must Watch";
+      movie.append(recommended);
+    }
     movieCont.append(movie);
     console.log(data);
   }
