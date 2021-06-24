@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{ 
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: black;
+            color: white;
+        }
+        .searchCont {
+            height: 20vh;
+            padding: 50px 200px;
+        }
+        .inputCont {
+            width: 60%;
+            position: relative;
+        }
+        .inputCont i {
+            position: absolute;
+            color: lime;
+            right: 2%;
+            font-size:23px ;
+            top: 23%;
+        }
+        .searchCont input {
+            width: 100%;
+            background-color: black;
+            color: white;
+            height: 40px;
+            border-radius: 5px;
+            border:1px solid lime;
+            outline: none;
+            padding: 10px;
+            font-size: 15px;
+            font-weight:600 ;
+        }
+        .movieCont {
+            height: 78vh;
+            border: 1px solid lime;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .movie { 
+            /* border: 1px solid red; */
+            width: 70%;
+            display: flex;
+            border: 1px solid white;
+         } 
+         .movieInfo {
+             width: 70%;
+             padding: 10px 20px;
+            
+         }
+         .movieInfo p {
+             margin-bottom: 10px;
+         }
+        .movieCont img {
+            width: 30%;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="mainCont">
+        <div class="searchCont">
+            <div class="inputCont">
+                <input type="search" name="name" id="name" placeholder="Search your favrite movie...">
+                <i onclick="getData()" class="fas fa-search"></i>
+            </div>
+        </div>
+        
+
+        <div class="movieCont">
+            
+        </div>
+    </div>
+</body>
+<script src="movie.js">
+
+</script>
+</html>
